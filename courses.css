@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap");
+
+:root {
+  /* colors  */
+
+  --clr-red: #ff4a38;
+  --clr-black: #2d2d2d;
+  --clr-white: #ffffff;
+  --clr-gray: #f8f8f8;
+
+  /* fonts  */
+
+  --poppins-regular: 400 1em/1.2 "Poppins";
+  --poppins-extra-light: 200 1em/1.2 "Poppins";
+  --poppins-semibold: 600 1em/1.2 "Poppins";
+  --poppins-bold: 700 1em/1.2 "Poppins";
+}
+
+.t-faq > h3 {
+  color: var(--clr-white);
+  font: var(--poppins-semibold);
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.ccc {
+  margin-top: 5rem;
+}
+.c-t > a:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+@media (max-width: 991.98px) {
+  .all-course {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 90%;
+  }
+
+  .courses {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    min-width: 300px;
+    width: 54%;
+    text-align: left;
+    padding: 0 1.3rem;
+    height: auto;
+  }
+
+  .c-t {
+    padding: 1rem 1rem 0 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .c-t > a {
+    text-decoration: none;
+    color: var(--clr-black);
+    font-size: 1.25rem;
+  }
+
+  .c-t > p {
+    font-size: 0.8rem;
+    padding: 1rem 0;
+    text-align: left;
+  }
+
+  .c-price {
+    padding: 1rem 0;
+    width: 100%;
+  }
+
+  .c-price > h4 {
+    margin-top: 3rem;
+    font: var(--poppins-semibold);
+    font-size: 0.875rem;
+  }
+
+  .m-para {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .book-btn {
+    padding: 2rem;
+  }
+  .t-faq > h3 {
+    padding: 0;
+    padding-top: 3.5rem;
+    font-size: 1.3rem;
+  }
+  .book-btn > a {
+    text-decoration: none;
+    color: var(--clr-white);
+    background-color: var(--clr-red);
+    padding: 0.4rem 3.5rem;
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 992px) {
+  .bg-img {
+    width: 100%;
+    padding: 0 5rem;
+  }
+  .d-faq-img {
+    overflow: hidden;
+  }
+  .all-course {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 980px;
+    height: 450px;
+  }
+
+  .courses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 940px;
+    height: 130px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .all-course .courses:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .all-course .courses:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .c-t {
+    flex-basis: 500px;
+  }
+
+  .c-t > a {
+    text-decoration: none;
+    color: var(--clr-black);
+    font-size: 1.5rem;
+  }
+  .m-date {
+    display: none;
+  }
+  .c-price > h4 {
+    font: var(--poppins-semibold);
+    font-size: 1rem;
+  }
+  .book-btn > a {
+    text-decoration: none;
+    color: var(--clr-white);
+    background-color: var(--clr-red);
+    padding: 0.5rem 2.3rem;
+    font-size: 1rem;
+  }
+}

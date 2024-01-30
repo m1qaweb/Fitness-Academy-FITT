@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap");
+
+:root {
+  /* colors  */
+
+  --clr-red: #ff4a38;
+  --clr-black: #2d2d2d;
+  --clr-white: #ffffff;
+  --clr-gray: #f8f8f8;
+
+  /* fonts  */
+
+  --poppins-regular: 400 1em/1.2 "Poppins";
+  --poppins-extra-light: 200 1em/1.2 "Poppins";
+  --poppins-semibold: 600 1em/1.2 "Poppins";
+  --poppins-bold: 700 1em/1.2 "Poppins";
+}
+.bg-main {
+  all: unset;
+  background-color: var(--clr-white);
+  width: 60%;
+}
+.d-faq-img {
+  max-width: 100%;
+}
+.ab-card > h2 {
+  color: var(--clr-red);
+  font: var(--poppins-bold);
+  font-size: 1.5rem;
+  padding: 1.4rem 0 1rem 0;
+}
+.ab-card > p {
+  font: var(--poppins-semibold);
+  color: var(--clr-black);
+  font-size: 1rem;
+}
+
+@media (min-width: 478px) {
+  .ab-card {
+    padding: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  .team-cards {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ab-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .ab-card > img {
+    width: 100%;
+    max-width: 480px;
+    min-height: 320px;
+    object-fit: cover;
+  }
+}
+@media (min-width: 992px) {
+  .team-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    flex-grow: 1;
+    max-width: 96%;
+    gap: 3rem;
+    padding-top: 10rem;
+  }
+  .ab-card {
+    max-width: 550px;
+    text-align: center;
+  }
+  .ab-card > img {
+    width: 100%;
+    width: 500px;
+    max-height: 540px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 1400px) {
+  .ab-card > img {
+    width: 500px;
+    height: 500px;
+  }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="FAQ.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/9cb0a7c4b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function closeNav() {
+        document.body.classList.remove("nav-active");
+      }
+    </script>
+    <title>About</title>
+  </head>
+  <body>
+    <div class="website">
+      <header>
+        <div class="top-header">
+          <img src="Logo.webp" alt="logo" />
+          <div class="header-title">
+            <a href="#">FITT</a>
+            <br />
+            <span class="title">Fitness Academy</span>
+          </div>
+          <button class="menu-btn">
+            <i class="bar fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div class="navlist">
+          <div class="close-btn" onclick="closeNav()">
+            <i class="fa-solid fa-xmark fa-xl"></i>
+          </div>
+          <ul>
+            <li><a href="index.html" id="home">HOME</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+          <div class="navlist-left">
+            <span class="num"
+              >1-800-000-0000
+              <span class="soc-icons">
+                <a href="#"><i class="icon fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="icon fa-brands fa-twitter"></i></a>
+              </span>
+            </span>
+            <span class="log-in">
+              <a href="#"
+                ><i
+                  class="user fa-solid fa-circle-user fa-xl"
+                  style="color: #ff4a38"
+                ></i
+              ></a>
+              <span class="acc"><a href="#">Log in</a></span>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <section class="faq-main">
+        <div class="bg-main">
+          <div class="bg-img">
+            <img class="d-faq-img" src="d-ab-img.webp" alt="" />
+          </div>
+          <div class="t-faq">
+            <h1>Who We Are?</h1>
+            <p>
+              Meet our talented and dedicated team of group class instructors at
+              Because It Matters Fitness.
+            </p>
+          </div>
+          <div class="faq-img">
+            <img class="m-faq-img" src="m-ab-img.webp" alt="" />
+          </div>
+        </div>
+      </section>
+    </div>
+    <section>
+      <div class="team-cards">
+        <div class="ab-card">
+          <img src="mollly.webp" alt="molly" />
+          <h2>Molly Thomas</h2>
+          <p>Founder & Lead Instructor</p>
+        </div>
+        <div class="ab-card">
+          <img src="alexx.webp" alt="alex" />
+          <h2>Alexander Watts</h2>
+          <p>Lead Instructor</p>
+        </div>
+        <div class="ab-card">
+          <img src="ella.webp" alt="ella" />
+          <h2>Ella Klein</h2>
+          <p>Fitness Instructor</p>
+        </div>
+        <div class="ab-card">
+          <img src="eric.webp" alt="eric" />
+          <h2>Eric Robbins</h2>
+          <p>Sports Therapist</p>
+        </div>
+        <div class="ab-card">
+          <img src="norra.webp" alt="nora" />
+          <h2>Nora Cortez</h2>
+          <p>Fitness Instructor</p>
+        </div>
+        <div class="ab-card">
+          <img src="adam.webp" alt="adam" />
+          <h2>Adam Pattontor</h2>
+          <p>CEO & Lead Instructor</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="soc-icons-1">
+        <a href="https://www.facebook.com/Internationalfitnessacademy"
+          ><i class="icon fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="#"><i class="icon fa-brands fa-twitter"></i></a>
+      </div>
+      <div class="ft-txt">
+        <p>
+          ©2035 by F I T T. Powered and secured by
+          <a class="ifa" href="https://www.internationalfitnessacademy.com/"
+            >IFA</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
