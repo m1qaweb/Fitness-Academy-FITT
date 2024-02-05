@@ -92,7 +92,11 @@
           </div>
         </div>
         <div class="sess-img">
-          <img class="m-courses-img" src="m-courses-img-1.webp" alt="" />
+          <img
+            class="m-courses-img"
+            src="/images/m-courses-img-1.webp"
+            alt=""
+          />
           <h3>Service Description</h3>
           <p>
             A Master Trainer Course is generally the most advanced among the
@@ -111,41 +115,70 @@
           <p>info@mysite.com</p>
         </div>
       </section>
-      <section class="right mt-5">
+      <section class="right mt-3">
         <div class="sessions">
           <h2>Upcoming Sessions</h2>
-          <p>Dates: Jan 1, 2035 - Dec 26, 2035 Total of 156 sessions</p>
-          <div class="sess-details">
-            <h5>Monday, Jan 1</h5>
-            <p>9:00 AM</p>
-            <p class="gray-p">6 hr</p>
-            <p class="gray-p">Staff Member #1</p>
-            <h5>Tuesday, Jan 2</h5>
-            <p>9:00 AM</p>
-            <p class="gray-p">6 hr</p>
-            <p class="gray-p">Staff Member #1</p>
-            <h5>Wednesday, Jan 3</h5>
-            <p>9:00 AM</p>
-            <p class="gray-p">6 hr</p>
-            <p class="gray-p">Staff Member #1</p>
-            <h5>Monday, Jan 8</h5>
-            <p>9:00 AM</p>
-            <p class="gray-p">6 hr</p>
-            <p class="gray-p">Staff Member #1</p>
-            <h5>Tuesday, Jan 9</h5>
-            <p>9:00 AM</p>
-            <p class="gray-p">6 hr</p>
-            <p class="gray-p">Staff Member #1</p>
-            <h5>Wednesday, Jan 10</h5>
-            <p>9:00 AM</p>
-            <p class="gray-p">6 hr</p>
-            <p class="gray-p">Staff Member #1</p>
-            <h5>Monday, Jan 15</h5>
-            <p>9:00 AM</p>
-            <p class="gray-p">6 hr</p>
-            <p class="gray-p">Staff Member #1</p>
-            <a href="#">Load all sessions</a>
+          <p>Dates: Jan 1, 2035 - Dec 26, 2035</p>
+          <p>Total of 156 sessions</p>
+          <div class="bd">
+            <div class="sess-details">
+              <h5>Monday, Jan 1</h5>
+              <div class="s-time">
+                <p id="hour">9:00 AM</p>
+                <p class="gray-p">6 hr</p>
+              </div>
+              <p class="gray-p">Staff Member #1</p>
+            </div>
+            <div class="sess-details">
+              <h5>Tuesday, Jan 2</h5>
+              <div class="s-time">
+                <p>9:00 AM</p>
+                <p class="gray-p">6 hr</p>
+              </div>
+              <p class="gray-p">Staff Member #1</p>
+            </div>
+            <div class="sess-details">
+              <h5>Thursday, Jan 3</h5>
+              <div class="s-time">
+                <p>9:00 AM</p>
+                <p class="gray-p">6 hr</p>
+              </div>
+              <p class="gray-p">Staff Member #1</p>
+            </div>
+            <div class="sess-details">
+              <h5>Monday, Jan 8</h5>
+              <div class="s-time">
+                <p>9:00 AM</p>
+                <p class="gray-p">6 hr</p>
+              </div>
+              <p class="gray-p">Staff Member #1</p>
+            </div>
+            <div class="sess-details">
+              <h5>Tuesday, Jan 9</h5>
+              <div class="s-time">
+                <p>9:00 AM</p>
+                <p class="gray-p">6 hr</p>
+              </div>
+              <p class="gray-p">Staff Member #1</p>
+            </div>
+            <div class="sess-details">
+              <h5>Thursday, Jan 10</h5>
+              <div class="s-time">
+                <p>9:00 AM</p>
+                <p class="gray-p">6 hr</p>
+              </div>
+              <p class="gray-p">Staff Member #1</p>
+            </div>
+            <div class="sess-details">
+              <h5>Monday, Jan 15</h5>
+              <div class="s-time">
+                <p>9:00 AM</p>
+                <p class="gray-p">6 hr</p>
+              </div>
+              <p class="gray-p">Staff Member #1</p>
+            </div>
           </div>
+          <a id="load" href="#">Load all sessions</a>
         </div>
         <div class="time">
           <p>Time Zone: Pacific Standard Time (PST)</p>
@@ -180,5 +213,15 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".menu-btn");
+        const body = document.body;
+
+        menuButton.addEventListener("click", function () {
+          body.classList.toggle("nav-active");
+        });
+      });
+    </script>
   </body>
 </html>

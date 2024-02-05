@@ -73,9 +73,9 @@
       </header>
     </div>
     <section class="faq-main">
-      <div class="bg-main">
+      <div class="bg-mmain">
         <div class="bg-img">
-          <img class="d-faq-img" src="d-faq-img.webp" alt="" />
+          <img class="d-bg-img" src="bg-images/d-faq-img.webp" alt="" />
         </div>
         <div class="t-faq">
           <h1>FAQ</h1>
@@ -85,7 +85,7 @@
           </p>
         </div>
         <div class="faq-img">
-          <img class="m-faq-img" src="m-faq-img.webp" alt="" />
+          <img class="m-faq-img" src="/bg-images/d-faq-img.webp" alt="" />
         </div>
       </div>
       <div class="questions">
@@ -156,5 +156,15 @@
         </p>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".menu-btn");
+        const body = document.body;
+
+        menuButton.addEventListener("click", function () {
+          body.classList.toggle("nav-active");
+        });
+      });
+    </script>
   </body>
 </html>

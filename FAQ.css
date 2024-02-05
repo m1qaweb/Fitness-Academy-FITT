@@ -24,6 +24,9 @@
 .bg-main {
   background-color: var(--clr-gray);
 }
+.bg-mmain {
+  background-color: var(--clr-gray);
+}
 .t-faq {
   max-width: 30rem;
   min-height: 30vh;
@@ -114,7 +117,10 @@
     min-height: 50vh;
     padding: 5rem 0;
   }
-
+  .bg-mmain {
+    min-height: 50vh;
+    padding: 5rem;
+  }
   .bg-img {
     display: flex;
     justify-content: center;
@@ -126,7 +132,7 @@
     all: unset;
     object-fit: cover;
     filter: brightness(80%);
-    width: 90%;
+    width: 100%;
     min-width: 60rem;
   }
 }

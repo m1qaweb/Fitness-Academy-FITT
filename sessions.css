@@ -57,7 +57,6 @@
 .spots > a {
   font: var(--poppins-semibold);
   font-size: 0.875rem;
-  padding: 0.6rem 2rem;
 }
 .sess-img {
   margin: auto;
@@ -75,47 +74,46 @@
 }
 .sess-img > p {
   font: var(--poppins-semibold);
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .right {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  margin: auto;
-  max-width: 520px;
 }
 .sessions {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 1rem;
-  max-width: 550px;
-  margin: auto;
 }
 .sessions {
   padding: 1rem;
 }
 .sessions > h2 {
   font: var(--poppins-semibold);
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
-.sessions > p {
+#load {
   font: var(--poppins-semibold);
-  font-size: 0.875rem;
-  padding-top: 0.625rem;
+  color: var(--clr-red);
 }
-.sess-details {
-  text-align: left;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 1rem;
-}
-.sess-details > h5 {
+.sess-details .sess-details > h5 {
   font: var(--poppins-semibold);
   border-bottom: 1px solid var(--clr-black);
   padding: 0.625rem 0;
 }
-.sess-details > p {
+.sess-details {
+  text-align: left;
+  padding: 1rem;
+}
+.sess-details > h5 {
+  font: var(--poppins-semibold);
+  font-size: 1rem;
+}
+.sess-details p {
   font: var(--poppins-semibold);
   font-size: 0.875rem;
   color: var(--clr-black);
+  margin-right: 2rem;
 }
-.sess-details > .gray-p {
+
+.sess-details .gray-p {
   opacity: 0.8;
 }
 .sess-details > a {
@@ -158,6 +156,60 @@
   .d-contact {
     display: none;
   }
+  .d-web {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sess-img {
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+  }
+  .sess-img > p {
+    width: 80%;
+    font-size: 0.875rem;
+    margin: auto;
+    height: 200px;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 520px;
+  }
+  .bd {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .sess-details {
+    max-width: 720px;
+  }
+  .sess-details:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border: 0;
+  }
+  .sess-details > h5 {
+    border-bottom: 1px solid var(--clr-black);
+    padding-bottom: 1rem;
+    font: var(--poppins-semibold);
+    font-size: 0.875rem;
+  }
+  .gray-p:nth-child(3) {
+    margin: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .sessions {
+    max-width: 550px;
+    padding: 1rem;
+  }
+  .sessions > p {
+    font: var(--poppins-semibold);
+    font-size: 0.875rem;
+    padding-top: 0.625rem;
+  }
 }
 @media (min-width: 992px) {
   .m-contact {
@@ -186,7 +238,7 @@
   }
   .right {
     margin: 0;
-    width: 80rem;
+    width: 43%;
   }
   .time > .link-btn {
     font: var(--poppins-extra-light);
@@ -226,13 +278,88 @@
   .sessions {
     border: none;
     background-color: var(--clr-gray);
-    padding: 4rem;
+    padding: 3rem;
+    width: 100%;
   }
   .sessions > h2 {
     color: var(--clr-red);
     font-size: 1.75rem;
   }
+  .sessions > p {
+    font: var(--poppins-semibold);
+    font-size: 1rem;
+    padding-top: 0.625rem;
+  }
+  .sess-details > p {
+    font: var(--poppins-semibold);
+    font-size: 0.875rem;
+    color: var(--clr-black);
+  }
+  .sess-details > h5 {
+    border: none;
+    width: 156px;
+    height: 20px;
+  }
+  .sess-details {
+    display: flex;
+    justify-content: space-between;
+    width: 720px;
+    gap: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: none;
+  }
+
+  .sess-details:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .sess-details:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .gray-p {
+    align-self: end;
+    margin: 0;
+    height: 20px;
+    min-width: 100px;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+  }
+  .s-time {
+    min-width: 10rem;
+  }
+  .s-time > p {
+    font: var(--poppins-semibold);
+    font-size: 1rem;
+    color: var(--clr-black);
+  }
+
   .m-courses-img {
     display: none;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1570px) {
+  .d-web {
+    flex-direction: column;
+  }
+  .left {
+    margin: 0;
+    width: 43%;
+  }
+  .right {
+    margin: 0;
+    width: 98%;
+    background-color: var(--clr-gray);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .sessions {
+    width: 60%;
+  }
+  .sessions > p {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1570px) {
+  .sess-details {
+    width: auto;
   }
 }

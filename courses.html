@@ -76,14 +76,14 @@
     <section class="faq-main">
       <div class="bg-main">
         <div class="bg-img">
-          <img class="d-faq-img" src="d-plank.webp" alt="" />
+          <img class="d-faq-img" src="/bg-images/d-plank.webp" alt="" />
         </div>
         <div class="t-faq">
           <h1>Courses</h1>
           <h3>Our courses are start of your career</h3>
         </div>
         <div class="faq-img">
-          <img class="m-faq-img" src="m-plank.webp" alt="" />
+          <img class="m-faq-img" src="/bg-images/m-plank.webp" alt="" />
         </div>
       </div>
     </section>
@@ -155,5 +155,15 @@
         </p>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".menu-btn");
+        const body = document.body;
+
+        menuButton.addEventListener("click", function () {
+          body.classList.toggle("nav-active");
+        });
+      });
+    </script>
   </body>
 </html>

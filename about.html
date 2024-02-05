@@ -76,7 +76,7 @@
       <section class="faq-main">
         <div class="bg-main">
           <div class="bg-img">
-            <img class="d-faq-img" src="d-ab-img.webp" alt="" />
+            <img class="d-faq-img" src="/bg-images/d-ab-img.webp" alt="" />
           </div>
           <div class="t-faq">
             <h1>Who We Are?</h1>
@@ -86,7 +86,7 @@
             </p>
           </div>
           <div class="faq-img">
-            <img class="m-faq-img" src="m-ab-img.webp" alt="" />
+            <img class="m-faq-img" src="/bg-images/m-ab-img.webp" alt="" />
           </div>
         </div>
       </section>
@@ -94,32 +94,32 @@
     <section>
       <div class="team-cards">
         <div class="ab-card">
-          <img src="mollly.webp" alt="molly" />
+          <img src="/images/mollly.webp" alt="molly" />
           <h2>Molly Thomas</h2>
           <p>Founder & Lead Instructor</p>
         </div>
         <div class="ab-card">
-          <img src="alexx.webp" alt="alex" />
+          <img src="/images/alexx.webp" alt="alex" />
           <h2>Alexander Watts</h2>
           <p>Lead Instructor</p>
         </div>
         <div class="ab-card">
-          <img src="ella.webp" alt="ella" />
+          <img src="/images/ella.webp" alt="ella" />
           <h2>Ella Klein</h2>
           <p>Fitness Instructor</p>
         </div>
         <div class="ab-card">
-          <img src="eric.webp" alt="eric" />
+          <img src="/images/eric.webp" alt="eric" />
           <h2>Eric Robbins</h2>
           <p>Sports Therapist</p>
         </div>
         <div class="ab-card">
-          <img src="norra.webp" alt="nora" />
+          <img src="/images/norra.webp" alt="nora" />
           <h2>Nora Cortez</h2>
           <p>Fitness Instructor</p>
         </div>
         <div class="ab-card">
-          <img src="adam.webp" alt="adam" />
+          <img src="/images/adam.webp" alt="adam" />
           <h2>Adam Pattontor</h2>
           <p>CEO & Lead Instructor</p>
         </div>
@@ -141,5 +141,15 @@
         </p>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".menu-btn");
+        const body = document.body;
+
+        menuButton.addEventListener("click", function () {
+          body.classList.toggle("nav-active");
+        });
+      });
+    </script>
   </body>
 </html>

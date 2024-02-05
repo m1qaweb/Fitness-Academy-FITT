@@ -22,13 +22,19 @@
   width: 90%;
   margin: auto;
 }
-
+section {
+  opacity: 0.9;
+  animation: fade-in 1.1s ease-in-out forwards;
+}
+img {
+  animation: bright 1.1s ease-in forwards;
+}
 /* top-header */
 
 .top-header {
   display: flex;
-  color: var(--clr-black);
   align-items: center;
+  color: var(--clr-black);
   margin-top: 0.5rem;
 }
 .menu-btn {
@@ -262,9 +268,11 @@ span > a {
   padding: 1rem;
 }
 .team-title > p {
-  font-size: 0.875rem;
-  line-height: 1.875em;
+  margin-top: 1rem;
   font: var(--poppins-regular);
+  font-size: 1.05rem;
+  line-height: 1.875em;
+
   width: 25rem;
 }
 .team {
@@ -317,9 +325,8 @@ span > a {
 /* courses */
 .our-courses {
   background-color: var(--clr-red);
-
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 2.5rem 0;
   overflow: hidden;
 }
 
@@ -392,25 +399,31 @@ span > a {
   margin: auto;
   width: 90%;
 }
-
-.input-group > input,
-.input-group > textarea,
 .input-group > .sub-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.9rem;
+  margin: 0.2rem 0 1rem;
+}
+.input-group > input,
+.input-group > textarea {
   width: 100%;
   border: none;
   outline: none;
   padding: 0.5rem;
   margin: 0.2rem 0 1rem;
+  border-bottom: 1px solid var(--clr-black);
 }
 .input-group > textarea {
   resize: none;
 }
 
-.input-group > input,
-.input-group > textarea {
-  border-bottom: 1px solid var(--clr-black);
+input:invalid:not(:placeholder-shown) {
+  outline: 1px solid var(--clr-red);
+  border: none;
+  background-color: #f9e5e5;
 }
-
 .sub-btn {
   background-color: var(--clr-black);
   color: var(--clr-white);
@@ -418,11 +431,7 @@ span > a {
   font-size: 1.125rem;
   padding: 1rem;
 }
-input[type="email"]:focus,
-input[type="email"]:valid {
-  background-color: 0.5 var(--clr-red);
-  border: 1px solid var(--clr-red);
-}
+
 .map {
   position: relative;
   overflow: hidden;
@@ -497,6 +506,13 @@ footer {
   }
   .t-register > h1 {
     font-size: 1.5rem;
+  }
+  .team-title > p {
+    font-size: 0.875rem;
+    width: 5rem;
+  }
+  .c-card {
+    margin-top: 2.8rem;
   }
 }
 @media (min-width: 576px) {
@@ -699,6 +715,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5rem;
   }
   .register {
     text-align: center;
@@ -903,8 +920,8 @@ footer {
   }
   .input-group > input:hover,
   .input-group > textarea:hover {
-    border: unset;
-    border: 1px solid var(--clr-black);
+    border-color: white;
+    outline: 1px solid var(--clr-black);
   }
   .sub-btn:hover {
     opacity: 0.8;
@@ -940,5 +957,24 @@ footer {
   }
   .p-txt > p {
     font-size: 1rem;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    filter: blur(0.2);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(1);
+  }
+}
+@keyframes brigth {
+  from {
+    filter: brightness(0.2);
+  }
+  to {
+    filter: brightness(1);
   }
 }

@@ -30,6 +30,9 @@
   align-items: center;
   width: 80%;
 }
+form {
+  width: 90%;
+}
 footer {
   margin-top: 5rem;
 }
@@ -63,5 +66,21 @@ footer {
     text-align: center;
     font-size: 1.5rem;
     padding-top: 2rem;
+  }
+  form {
+    width: 80%;
+  }
+}
+@media (max-width: 610px) {
+  .bg-main {
+    padding: 0;
+  }
+  .sec-reg {
+    display: flex;
+    justify-content: center;
+  }
+  .register {
+    margin: 0;
+    width: 100%;
   }
 }

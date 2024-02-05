@@ -92,7 +92,11 @@
           </div>
         </div>
         <div class="sess-img">
-          <img class="m-courses-img" src="m-courses-img-1.webp" alt="" />
+          <img
+            class="m-courses-img"
+            src="/images/m-courses-img-1.webp"
+            alt=""
+          />
           <h3>Service Description</h3>
           <p>
             This course is often more advanced than a Fitness Instructor Course.
@@ -178,5 +182,15 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".menu-btn");
+        const body = document.body;
+
+        menuButton.addEventListener("click", function () {
+          body.classList.toggle("nav-active");
+        });
+      });
+    </script>
   </body>
 </html>

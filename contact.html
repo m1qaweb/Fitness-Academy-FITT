@@ -78,14 +78,14 @@
       <section class="faq-main">
         <div class="bg-main">
           <div class="bg-img">
-            <img class="d-faq-img" src="d-con-img.webp" alt="" />
+            <img class="d-faq-img" src="/bg-images/d-con-img.webp" alt="" />
           </div>
           <div class="t-faq">
             <h1>Your Fitness Career Starts Here</h1>
             <p id="reg-p">Register Now</p>
           </div>
           <div class="faq-img">
-            <img class="m-faq-img" src="m-con-img.webp" alt="" />
+            <img class="m-faq-img" src="/bg-images/m-con-img.webp" alt="" />
           </div>
         </div>
       </section>
@@ -98,21 +98,29 @@
             <p>info@mysite.com</p>
             <p>1-800-000-0000</p>
           </div>
-          <div class="input-group">
-            <input type="text" id="name" placeholder="Name" />
-            <label for="name"></label>
-            <input type="email" id="email" placeholder="Email" required />
-            <label for="email"></label>
-            <input type="text" id="subject" placeholder="Subject" />
-            <label for="subject"></label>
-            <textarea
-              type="text"
-              id="comment"
-              placeholder="Type your message here..."
-              rows="4"
-            ></textarea>
-            <button class="sub-btn">Submit</button>
-          </div>
+          <form>
+            <div class="input-group">
+              <input type="text" id="name" placeholder="Name" />
+              <label for="name" class="form-label"></label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                required
+              />
+              <label for="email" class="form-label"></label>
+              <input type="text" id="subject" placeholder="Subject" />
+              <label for="subject" class="form-label"></label>
+              <textarea
+                type="text"
+                id="comment"
+                placeholder="Type your message here..."
+                rows="4"
+              ></textarea>
+              <button type="submit" class="sub-btn">Submit</button>
+            </div>
+          </form>
           <section class="map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.839635217626!2d-122.38840489021325!3d37.7703582273615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7f1a33f38ea7%3A0xe4941e6c1dc4022b!2s500%20Terry%20A%20Francois%20Blvd%2C%20San%20Francisco%2C%20CA%2094158%2C%20USA!5e0!3m2!1sen!2sge!4v1706362016952!5m2!1sen!2sge"
@@ -141,5 +149,15 @@
         </div>
       </footer>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".menu-btn");
+        const body = document.body;
+
+        menuButton.addEventListener("click", function () {
+          body.classList.toggle("nav-active");
+        });
+      });
+    </script>
   </body>
 </html>
